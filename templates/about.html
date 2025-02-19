@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About - Our brand</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        <link rel="stylesheet" href="{{url_for('static', filename='About.style.css')}}"
+    </head>
+    <body>
+      <header>
+        <div class="banner">
+            <div class="navbar">
+              <img src="{{ url_for('static', filename='images/logo.png')}}" class="logo"style="width: 90px; height: auto;">
+              <ul>
+                <li><a href="{{url_for('views.home')}}">Home</a></li>
+                <li><a href="{{url_for('views.about')}}">About</a></li>
+                <li><a href="{{url_for('auth.shop')}}">Shop</a></li>
+                <li><a href="{{url_for('views.contact')}}">Contact</a></li>
+                <li><a href="{{url_for('auth.login')}}">Login</a></li>
+              </ul>
+              <div class="navbar_icons">
+                <div class="shopping">
+                    <ul>
+                        <li><a href="{{url_for('auth.Shopping_Cart')}}"><i class="fa-solid fa-bag-shopping fa-lg" style="color: black"></i><span class="quantity"><i class="fa-solid fa-exclamation"></i></span></a></li>
+                        
+                    </ul>
+                </div> 
+              </div>
+            </div>
+  
+
+
+            <br>
+
+            <div class="About-text">
+                <h1 class="Title">Bіz turaly</h1>
+                <p class="About-paragraph"> Qazaq comics ózin qazaq tildi jurtshylyqqa baǵdarlanǵan komıks jasaýshylar úshin alań retinde kórsetedi. Qazaq ańyzdary túpnusqa keıipkerler men zulymdarǵa toly úlken qazyna, shabyt kózi, sondyqtan qazaqstandyq sheberler bizdiń ertegilerimiz ben mıfterimizdi komıksterge beıimdeýdi sheshkeni tańqalarlyq emes. Sońǵy jyldary bul sala jaqsy qarqyn ala bastady, sondyqtan biz komıks jazýshylaryna satýǵa kómektesýdi sheshtik. Nebári 2 jyl ishinde biz 5000-nan astam Satyp alýshy taba aldyq. Bizdiń mısıamyz - avtorlarǵa ózderiniń komıksterin nasıhattaýǵa jáne elde komıkster salasyn damytýǵa kómektesý. Biz óz klıentterimizge joǵary sapaly komıksterdi usynǵanymyzdy maqtan tutamyz.</p>
+                
+                <div class="button_location">
+                    <a href="{{url_for('views.contact')}}">
+                        <button type="button" id="b1">BIZGE HABARLASYÑYZ</button>
+                    </a>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class="Sub-Title">Maqsatty auditoriamyz:</h2>
+                <hr class="Line">
+                <p class="About-paragraph">Qazaqtıldı balalar, jasöspırımder, eresekter. Qazaq tılıñ  üirenıp jürgen adamdar. </p>
+
+            </div>
+
+            <br>
+
+            <div id="container">
+
+
+                <div id="main">
+                </div>
+            </div>
+
+            <footer id="footer">
+            <div class="footer_content">
+         <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram fa-4x" style="color: lightblue"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook fa-4x" style="color: lightblue"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-square-twitter fa-4x" style="color: lightblue"></i></a>
+            </div>
+            </footer>
+
+          </div>
+        </div>
+      </header>
+    </body>
+  </html>
